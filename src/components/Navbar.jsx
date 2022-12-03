@@ -14,7 +14,7 @@ const Navbars = () => {
     <>
       <Container>
         {["lg"].map((expand) => (
-          <Navbar key={expand} bg="light" expand={expand} className="mb_count">
+          <Navbar key={expand} bg="light" expand={expand} className="mb-3">
             <Container fluid>
               <Navbar.Brand as={Link} to={"/"}>
                 <img style={{ width: 100 }} src={Logo} alt="logo" />
