@@ -17,7 +17,7 @@ const Navbars = () => {
           <Navbar key={expand} bg="light" expand={expand} className="mb_count">
             <Container fluid>
               <Navbar.Brand as={Link} to={"/"}>
-                <img style={{ width: 200 }} src={Logo} alt="logo" />
+                <img style={{ width: 100 }} src={Logo} alt="logo" />
               </Navbar.Brand>
 
               <Navbar.Offcanvas
