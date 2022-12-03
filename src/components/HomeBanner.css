@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/**** Banner text area ******/
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  padding-left: 36px;
+}
+.banner_text h1 {
+  font-size: 80px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.banner_text h1:nth-child(2) {
+  color: red;
+}
+
+.banner_text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #6c7281;
+  padding: 15px 0 15px 0;
+}
+
+.text_et{
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .banner_text h1 {
+    font-size: 40px;
+  }
+  .banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+    padding-left: 0;
+    padding-top: 36px;
+}
+}
+
+/*********       BANNER IMAGE SECTION    **********/
+
+.banner_img_section {
+  width: 939px;
+  height: 85vh;
+  position: relative;
+}
+.banner_img_section img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+}
+.height_80vh {
+  height: 80vh;
+}
+.zoom-img {
+  height: 88vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .mobile_banner_img {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .mobile_banner_img {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop_banner_img {
+    display: none;
+  }
+}
+
+.mob_img {
+  object-fit: cover;
+  width: 100%;
+}
