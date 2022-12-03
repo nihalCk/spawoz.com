@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spawoz.com/static/css/main.80e8efdb.css",
+    "main.js": "/spawoz.com/static/js/main.5a1846e9.js",
+    "static/media/banner.jpg": "/spawoz.com/static/media/banner.ec156b2b57c216a2c31d.jpg",
+    "static/media/logo.png": "/spawoz.com/static/media/logo.3f212cae895d20cf2679.png",
+    "index.html": "/spawoz.com/index.html",
+    "main.80e8efdb.css.map": "/spawoz.com/static/css/main.80e8efdb.css.map",
+    "main.5a1846e9.js.map": "/spawoz.com/static/js/main.5a1846e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80e8efdb.css",
+    "static/js/main.5a1846e9.js"
+  ]
+}
