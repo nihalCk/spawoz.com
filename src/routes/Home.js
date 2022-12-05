@@ -1,5 +1,7 @@
 import React from "react";
+import HomeAbout from "../components/HomeAbout";
 import HomeBanner from "../components/HomeBanner";
+import HomeService from "../components/HomeService";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
                 apps, UI/UX,  Search engine optimisation, WordPress and
                 CMS."
       />
+      <HomeAbout  />
+      <HomeService />
     </>
   );
 };

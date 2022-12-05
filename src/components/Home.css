@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+p{
+  color: #6c7281;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+
+h2{
+  font-size: 60px !important;
+  font-family: "Barlow Condensed", sans-serif;
+}
+span{
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  color: #e40000;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+
+}
+
+/**** Banner text area ******/
+.paddin_top_must {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 36px;
+}
+.banner_text h1 {
+  font-size: 80px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.banner_text h1:nth-child(2) {
+  color: red;
+  padding-top: 2px;
+}
+
+.banner_text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #6c7281;
+  padding: 15px 0 15px 0;
+}
+
+.text_et {
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .banner_text h1 {
+    font-size: 40px;
+  }
+  .banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 44vh;
+    padding-left: 0;
+    padding-top: 36px;
+  }
+  .paddin_top_must {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.service_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65vh !important;
+}
+}
+
+/*********       BANNER IMAGE SECTION    **********/
+
+.banner_img_section {
+  width: 939px;
+  height: 85vh;
+  position: relative;
+}
+
+.banner_img_section img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+}
+.height_80vh {
+  height: 80vh;
+  width: 147%;
+  padding-top: 90px;
+}
+.zoom-img {
+  height: 90vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .mobile_banner_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mobile_banner_img {
+    display: block;
+  }
+  .mob_banner_pad {
+    padding-top: 85px;
+  }
+}
+
+@media (max-width: 992px) {
+  .desktop_banner_img {
+    display: none;
+  }
+}
+
+.mob_img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/************  Home About us ************/
+
+.about_right {
+  position: relative;
+}
+
+.banner-1 {
+  position: relative;
+  border-radius: 40px 10px 10px 10px;
+}
+
+.banner-1:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #0a0a0a;
+  opacity: 0.5;
+  border-radius: 40px 10px 10px 10px;
+}
+
+.banner-1 img {
+  width: 100%;
+  border-radius: 40px 10px 10px 10px;
+}
+
+.banner-2 {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: -94px;
+  border-left: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-radius: 20px 5px 10px 15px;
+}
+.banner-2:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #0a0a0a;
+  opacity: 0.5;
+  border-radius: 20px 5px 10px 15px;
+}
+
+.banner-2 img {
+  max-width: 200px;
+  border-radius: 20px 5px 10px 15px;
+}
+
+
+
+.about_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 54vh;
+ 
+}
+
+
+.service_left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.service_right{
+  height: 80vh;
+}
+.pt_200{
+  padding-bottom: 20px;
+}
+
+
+
+
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.content img{
+  width: 100%;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.content .content-overlay3 {
+  background: #000000b8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.whatdodiv {
+  width: 50px;
+}
+.slide-left .overlay {
+  background-color: #dd6f6a60;
+  line-height: 200px;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-2{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-3{
+    display: none;
+    
+  }
+}
+
+.banner-3{
+  padding-top: 20px;
+  position: relative;
+  border-radius: 40px 10px 10px 10px;
+}
+
+.banner-3:before {
+  position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a0a;
+    opacity: .5;
+    border-radius: 40px 10px 10px 10px;
+}
+.banner-3 img{
+  object-fit: cover;
+}

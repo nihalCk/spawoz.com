@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ButtonAll from "./ButtonAll";
-import "./HomeBanner.css";
+import "./Home.css";
 import banner from "../assets/img/banner.jpg";
 
 
@@ -11,7 +11,7 @@ import { transition1 } from "../../src/transition";
 const HomeBanner = (props) => {
   return (
     <>
-      <Container>
+      <Container className="mob_banner_pad">
         <Row>
           <Col lg={6} className="mobile_banner_img">
             <div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react"
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -10,14 +10,22 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbars = () => {
+
+  const [scroll, setScroll] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 10)
+    })
+  }, [])
   return (
     <>
-      <Container>
+    <div className="nav_main">
+      <Container fluid>
         {["lg"].map((expand) => (
-          <Navbar key={expand} bg="light" expand={expand} className="mb-3">
-            <Container fluid>
+          <Navbar key={expand} bg="light" expand={expand}  className={scroll ? " fixed-top  bx-shadow" : "mb-3 fixed-top container-fluid"}>
+            <Container>
               <Navbar.Brand as={Link} to={"/"}>
-                <img style={{ width: 100 }} src={Logo} alt="logo" />
+                <img style={{ width: 115 }} src={Logo} alt="logo" />
               </Navbar.Brand>
 
               <Navbar.Offcanvas
@@ -66,6 +74,7 @@ const Navbars = () => {
           </Navbar>
         ))}
       </Container>
+      </div>
     </>
   );
 };

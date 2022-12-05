@@ -5,8 +5,19 @@
     display: block !important;
   }
 }
+
+.nav_main{
+  width: 100%;
+  background-color: white;
+ 
+}
 .bg-light {
   background-color: #ffff !important;
+  
+}
+
+.bx-shadow{
+  box-shadow: 0 7px 7px -7px rgb(0 0 0 / 50%);
 }
 .offcanvas-body a {
   font-weight: 300;
@@ -28,6 +39,10 @@
   justify-content: center;
   align-items: center;
   height: 40px;
+}
+
+.navbar-toggler-icon {
+  font-size: 21px;
 }
 .quote_btn:hover {
   background-color: red;
