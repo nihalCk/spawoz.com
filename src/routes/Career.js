@@ -1,11 +1,14 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from "react";
 
+import Navbar from "../components/Navbar";
 
 const Career = () => {
   return (
-    <Navbar />
-  )
-}
+    <>
+      <Navbar />
+      
+    </>
+  );
+};
 
-export default Career
+export default Career;

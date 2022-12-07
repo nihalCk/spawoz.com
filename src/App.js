@@ -11,6 +11,8 @@ import Industries from "./routes/Industries";
 import OurWorks from "./routes/OurWorks";
 import Services from "./routes/Services";
 
+// import Nav from "./routes/Navi"
+
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {

@@ -18,6 +18,7 @@
 
 .bx-shadow{
   box-shadow: 0 7px 7px -7px rgb(0 0 0 / 50%);
+  transition: all 0.3s ease-out;
 }
 .offcanvas-body a {
   font-weight: 300;

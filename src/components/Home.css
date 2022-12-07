@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
-p{
+p {
   color: #6c7281;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -11,11 +10,21 @@ p{
   text-align: justify;
 }
 
-h2{
+h2 {
   font-size: 60px !important;
   font-family: "Barlow Condensed", sans-serif;
 }
-span{
+h6 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400 !important;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px !important;
+  }
+}
+span {
   font-weight: 600;
   font-size: 16px;
   display: inline-block;
@@ -23,7 +32,6 @@ span{
   padding-bottom: 0px;
   margin-bottom: 0px;
   text-transform: uppercase;
-
 }
 
 /**** Banner text area ******/
@@ -65,6 +73,10 @@ span{
   .banner_text h1 {
     font-size: 40px;
   }
+
+  .banner_text h2 {
+    font-size: 40px !important;
+  }
   .banner_text {
     display: flex;
     flex-direction: column;
@@ -76,16 +88,29 @@ span{
   .paddin_top_must {
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.service_left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 65vh !important;
-}
+  }
+  .service_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65vh !important;
+  }
 }
 
 /*********       BANNER IMAGE SECTION    **********/
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: pink;
+}
+.contasa {
+  visibility: hidden;
+}
 
 .banner_img_section {
   width: 939px;
@@ -185,44 +210,35 @@ span{
   border-radius: 20px 5px 10px 15px;
 }
 
-
-
-.about_left{
+.about_left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 54vh;
- 
 }
 
-
-.service_left{
+.service_left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 80vh;
 }
 
-.service_right{
+/* .service_right {
   height: 80vh;
-}
-.pt_200{
+} */
+.pt_200 {
   padding-bottom: 20px;
 }
-
-
-
-
 
 .content {
   position: relative;
   width: 100%;
   margin: auto;
   overflow: hidden;
-  
 }
 
-.content img{
+.content img {
   width: 100%;
 }
 
@@ -255,19 +271,18 @@ span{
 }
 
 @media screen and (max-width: 768px) {
-  .banner-2{
+  .banner-2 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .banner-3{
+  .banner-3 {
     display: none;
-    
   }
 }
 
-.banner-3{
+.banner-3 {
   padding-top: 20px;
   position: relative;
   border-radius: 40px 10px 10px 10px;
@@ -275,13 +290,81 @@ span{
 
 .banner-3:before {
   position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: #0a0a0a;
-    opacity: .5;
-    border-radius: 40px 10px 10px 10px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #0a0a0a;
+  opacity: 0.5;
+  border-radius: 40px 10px 10px 10px;
 }
-.banner-3 img{
+.banner-3 img {
   object-fit: cover;
 }
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: black;
+  padding-top: 65px;
+  z-index: 2222222;
+}
+.footer img {
+  height: 80px;
+}
+
+.footer img:hover {
+  color: red;
+}
+
+.social_media {
+  padding-top: 106px;
+}
+.footer a {
+  padding: 8px;
+}
+
+.social_media:hover {
+  color: red;
+}
+
+.footer p {
+  color: #a2a6af;
+  font-size: 14px;
+}
+
+
+.footer-bottom {
+  padding-top: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  margin-top: 22px;
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+
+.content .content-overlay {
+  background: #000000b8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.whatdodiv {
+  width: 50px !important;
+}
+
+
+
+
+

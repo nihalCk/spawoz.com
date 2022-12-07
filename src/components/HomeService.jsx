@@ -6,6 +6,10 @@ import service1 from "../assets/img/service1.jpg";
 import service2 from "../assets/img/service2.jpg";
 import service3 from "../assets/img/service3.jpg";
 import service4 from "../assets/img/service4.jpg";
+import desktopservice1 from "../assets/img/desktopservice1.png";
+
+import { motion } from "framer-motion";
+import { transition1 } from "../../src/transition";
 
 const HomeService = () => {
   return (
@@ -26,26 +30,72 @@ const HomeService = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <div className="service_right">
+            <motion.div
+              initial={{ opacity: 0, y: "80%" }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: "80%" }}
+              transition={transition1}
+              className="service_right"
+            >
               <Row>
                 <Col xsm={6}>
                   <div className="content pt_200">
                     <img src={service1} className="img-fluid" alt="" />
+                    <div className="content-overlay">
+                      <div className="h-100 d-flex align-items-center justify-content-center flex-column box_op_ser">
+                        <img
+                          className="img-ic2 whatdodiv"
+                          src={desktopservice1}
+                          alt=""
+                        />
+                        <h4 className="text-white mb-0">Web Design</h4>
+                      </div>
+                    </div>
                   </div>
                   <div className="content">
                     <img src={service2} className="img-fluid" alt="" />
+                    <div className="content-overlay">
+                      <div className="h-100 d-flex align-items-center justify-content-center flex-column box_op_ser">
+                        <img
+                          className="img-ic2 whatdodiv"
+                          src={desktopservice1}
+                          alt=""
+                        />
+                        <h4 className="text-white mb-0">Web Design</h4>
+                      </div>
+                    </div>
                   </div>
                 </Col>
                 <Col xsm={6}>
                   <div className="content pt_200">
                     <img src={service3} className="img-fluid" alt="" />
+                    <div className="content-overlay">
+                      <div className="h-100 d-flex align-items-center justify-content-center flex-column box_op_ser">
+                        <img
+                          className="img-ic2 whatdodiv"
+                          src={desktopservice1}
+                          alt=""
+                        />
+                        <h4 className="text-white mb-0">Web Design</h4>
+                      </div>
+                    </div>
                   </div>
                   <div className="content">
                     <img src={service4} className="img-fluid" alt="" />
+                    <div className="content-overlay">
+                      <div className="h-100 d-flex align-items-center justify-content-center flex-column box_op_ser">
+                        <img
+                          className="img-ic2 whatdodiv"
+                          src={desktopservice1}
+                          alt=""
+                        />
+                        <h4 className="text-white mb-0">Web Design</h4>
+                      </div>
+                    </div>
                   </div>
                 </Col>
               </Row>
-            </div>
+            </motion.div>
           </Col>
         </Row>
       </Container>
