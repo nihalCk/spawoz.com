@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/spawoz.com/static/css/main.0f10c970.css",
-    "main.js": "/spawoz.com/static/js/main.56a2711e.js",
+    "main.css": "/spawoz.com/static/css/main.56b042f3.css",
+    "main.js": "/spawoz.com/static/js/main.9996f789.js",
     "static/media/banner.jpg": "/spawoz.com/static/media/banner.ec156b2b57c216a2c31d.jpg",
     "static/media/sp-logo-w.svg": "/spawoz.com/static/media/sp-logo-w.68125c7566d39eefa316a6cc55dbdabd.svg",
     "static/media/homeabout2.jpg": "/spawoz.com/static/media/homeabout2.225abb9c6924a44c1c1d.jpg",
@@ -13,11 +13,11 @@
     "static/media/logo.png": "/spawoz.com/static/media/logo.e1865a68db22a684a566.png",
     "static/media/homeabout3.jpg": "/spawoz.com/static/media/homeabout3.5be768d44f093678a27e.jpg",
     "index.html": "/spawoz.com/index.html",
-    "main.0f10c970.css.map": "/spawoz.com/static/css/main.0f10c970.css.map",
-    "main.56a2711e.js.map": "/spawoz.com/static/js/main.56a2711e.js.map"
+    "main.56b042f3.css.map": "/spawoz.com/static/css/main.56b042f3.css.map",
+    "main.9996f789.js.map": "/spawoz.com/static/js/main.9996f789.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f10c970.css",
-    "static/js/main.56a2711e.js"
+    "static/css/main.56b042f3.css",
+    "static/js/main.9996f789.js"
   ]
 }
