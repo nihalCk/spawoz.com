@@ -15,41 +15,43 @@ AOS.init();
 const HomeAbout = () => {
   return (
     <>
-      <Container className="paddin_top_must">
-        <Row>
-          <Col lg={6}>
-            <div
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="500"
-              className="about_right"
-            >
-              <div className="h-100 banner_12">
-                <div className="banner-1">
-                  <img src={homeabout} alt="" className="img-fluid" />
-                </div>
-                <div className="banner-2 d-lg-block">
-                  <img src={homeabout2} alt="" className="img-fluid" />
-                </div>
-                <div className=" banner-1  my-2 d-lg-none ">
-                  <img src={homeabout3} alt="" className="img-fluid" />
+      <section>
+        <Container >
+          <Row>
+            <Col lg={6}>
+              <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="500"
+                className="about_right"
+              >
+                <div className="h-100 banner_12">
+                  <div className="banner-1">
+                    <img src={homeabout} alt="" className="img-fluid" />
+                  </div>
+                  <div className="banner-2 d-lg-block">
+                    <img src={homeabout2} alt="" className="img-fluid" />
+                  </div>
+                  <div className=" banner-1  my-2 d-lg-none ">
+                    <img src={homeabout3} alt="" className="img-fluid" />
+                  </div>
                 </div>
               </div>
-            </div>
-          </Col>
-          <Col lg={6}>
-            <div className="about_left">
-              <ThreeTextSection
-                heading="GET TO KNOW"
-                title="About Us"
-                text="We're a full-fledged digital consultancy and Leading software development company in India that provides cutting-edge engineering results, helping Fortune 500+ companies and enterprise guests untangle complex issues that always crop up during their digital elaboration time."
-                className="hello"
-              />
-              <ButtonAll title="View More" />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+            <Col lg={6}>
+              <div className="about_left">
+                <ThreeTextSection
+                  heading="GET TO KNOW"
+                  title="About Us"
+                  text="We're a full-fledged digital consultancy and Leading software development company in India that provides cutting-edge engineering results, helping Fortune 500+ companies and enterprise guests untangle complex issues that always crop up during their digital elaboration time."
+                  className="hello"
+                />
+                <ButtonAll title="View More" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

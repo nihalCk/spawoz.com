@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className="footer">
+      <section className="footer pb-0">
         <Container fluid>
           <Container>
             <Row>
@@ -17,7 +17,7 @@ const Footer = () => {
                   <img src={Logo} alt="" />
                 </div>
                 <div className="social_media">
-                  <Link>
+                  <Link className="pl_g">
                     <ImFacebook 
                       style={{ color: "#fff", fontSize: 20, cursor: "pointer"}}
                     />
@@ -44,7 +44,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </Col>
-              <Col lg={3} sm={6} className="pl-4">
+              <Col lg={3} sm={6} className="pl-4 rot">
                 <h6>Quick Links</h6>
                 <p className="pt-3">Our Works</p>
                 <p>Services</p>

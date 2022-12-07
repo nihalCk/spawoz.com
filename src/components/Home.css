@@ -9,6 +9,10 @@ p {
   font-style: normal;
   text-align: justify;
 }
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 h2 {
   font-size: 60px !important;
@@ -22,6 +26,13 @@ h6 {
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 40px !important;
+  }
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt_4 {
+    padding-top: 30px;
   }
 }
 span {
@@ -86,14 +97,13 @@ span {
     padding-top: 36px;
   }
   .paddin_top_must {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 20px;
   }
   .service_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 65vh !important;
   }
 }
 
@@ -221,7 +231,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
 }
 
 /* .service_right {
@@ -332,11 +341,10 @@ span {
   font-size: 14px;
 }
 
-
 .footer-bottom {
   padding-top: 30px;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 22px;
 }
 
@@ -346,8 +354,14 @@ span {
   font-weight: 400;
   line-height: 29px;
 }
-
-
+.content{
+  cursor: pointer;
+}
+.content:hover .whatdodiv,
+.content:hover .titl  {
+  display: none;
+  
+}
 .content .content-overlay {
   background: #000000b8;
   position: absolute;
@@ -364,7 +378,69 @@ span {
   width: 50px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .pl_g {
+    padding-left: 0 !important;
+  }
+  .rot {
+    margin-top: 20px !important;
+  }
+  .social_media {
+    padding-top: 20px;
+  }
+}
+
+.right_0{
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+.slide-left .overlay {
+  background-color: #dd6f6a60;
+  line-height: 200px;
+  color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
 
 
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #dd6f6a60;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
 
+.bg_white_trans {
+  background: linear-gradient(to top,#333,#333333f2 50%,#33333312 75%,#33333312 75%);
+}
+
+.content:hover .overlay {
+  width: 100%;
+}
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+  .titl{
+    font-size: 20px;
+  }
+}
